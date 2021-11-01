@@ -1,0 +1,290 @@
+* {box-sizing: border-box; border-radius: 20px}
+
+.container {
+    padding: 10px;
+    padding-left: 80px;
+    height: 97vh;
+    background-color: #FFCC2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Start top */
+.container .top {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 60%;
+    margin-top: 60px;
+}
+/* Start Left */
+.container .top .left {
+    display: flex;
+    width: 80%;
+    border: 13px solid #6B1738;
+    background-color: #6B1738;
+    outline: 8px solid white
+}
+/* Start left-side */
+.container .top .left .left-side {
+    width: 76%;
+    padding: 25px;
+    background-color: white;
+    position: relative;   
+} 
+.container .top .left .left-side::before {
+    content: "";
+    width: 100%;
+    height: 101%;
+    position: absolute;
+    top: -2%;
+    left: -3%;
+    border: 6px solid #6B1738;
+    border-radius: 20px;
+} 
+.container .top .left .left-side .screen {
+    height: 80%;
+    padding: 25px 5px 5px 25px;
+    background-color: #6B1738;
+}
+.container .top .left .left-side .screen div {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 0 20px 0;
+    background-color: #01D2BF;
+}
+.container .top .left .left-side .circles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.container .left .left-side .circles div:first-of-type span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #6B1738;
+}
+.container .left .left-side .circles div:last-of-type {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #6B1738;
+}
+/* End left-side */
+/* Start Right-side */
+.container .top .left .right-side {
+    width: 25%;
+    padding: 70px 0 15px;
+    border-top: 15px solid #FFD8D8;
+    border-bottom: 50px solid #E93751;
+    border-radius: 0 15px 15px 0;
+    background-color: #FF5E5C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .top .left .right-side span {
+    margin: 8px 0;
+    width: 60%;
+    height: 3px;
+    display: inline-block;
+    background-color: #6B1738;
+}
+/* End Right-side */
+/* End Left */
+/* Start Right */
+.container .top .right {
+    height: 60%;
+    padding: 15px 15px 15px 10px;
+    background-color: #6B1738;
+    border-radius: 0 20px 20px 0;
+    width: 10%;
+    position: relative;
+}
+.container .top .right::before,
+.container .top .right::after {
+    content: "";
+    width: 100%;
+    height: 8%;
+    border-radius: 0 20px 20px;
+    background-color: #6B1738;
+    position: absolute;
+}
+.container .top .right::before {
+    top: -1.5%;
+    left: -10%;
+    transform: rotate(15deg);
+}
+.container .top .right::after {
+    bottom: -1.5%;
+    left: -10%;
+    transform: rotate(-15deg);
+}
+.container .top .right div {
+    width: 90%;
+    height: 95%;
+    border-radius: 0 20px 20px 0;
+    background-color: #FF5E5C;
+    position: relative;
+}
+.container .top .right div::before,
+.container .top .right div::after {
+    content: "";
+    width: 99%;
+    position: absolute;
+}
+.container .top .right div::before {
+    height: 15%;
+    background-color: #FFD8D8;
+    top: -1%;
+    border-radius: 0 20% 5% 0;
+    transform: skew(360deg, 12deg);
+}
+.container .top .right div::after {
+    height: 25%;
+    background-color: #E93751;
+    bottom: -6%;
+    border-radius: 0 5% 20% 0;
+    transform: skew(0deg, 345deg);
+}
+/* End Right */
+/* End top */
+/* Start Bottom */
+.container .bottom {width: 45%; height: 30%; position: relative}
+
+.container .bottom .small-line {
+    width: 50%;
+    height: 10%;
+    padding: 3px 15px;
+    border-radius: 0;
+    background-color: #6B1738;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -15%;
+    right: 33.5%;
+    z-index: 2
+}
+.container .bottom .small-line div:first-of-type {
+    width: 75%;
+    height: 100%;
+    border-radius: 0;
+    background-color: #E69A9A
+}
+.container .bottom .small-line div:last-of-type {
+    width: 23%;
+    height: 100%;
+    border-radius: 0;
+    background-color: #E69A9A
+}
+/* Start medium */
+.container .bottom .medium {
+    width: 80%;
+    height: 60%;
+    padding: 15px;
+    margin-top: -20px;
+    background-color: #6B1738;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+.container .bottom .medium::before,
+.container .bottom .medium::after {
+    content: "";
+    width: 25%;
+    height: 25%;
+    border-radius: 20px;
+    background-color: #6B1738;
+    position: absolute;
+    bottom: 0%;
+}
+.container .bottom .medium::before {left: -10%}
+
+.container .bottom .medium::after {right: -10%; z-index: -1}
+
+.container .bottom .medium .left-side {
+    width: 85%;
+    height: 100%;
+    padding: 12px 30px;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.container .bottom .medium .left-side::before {
+    content: "";
+    width: 100%;
+    height: 105%;
+    border-radius: 15px;
+    border: 5px solid #6B1738;
+    position: absolute;
+    top: -4%;
+    left: -2%
+}
+.container .bottom .left-side > div:first-of-type {
+    width: 45%;
+    height: 95%;
+    background-color: #6B1738;
+    border-radius: 5px;
+}
+.container .bottom .left-side > div:first-of-type > div {
+    width: 80%;
+    height: 76%;
+    margin: 6px 0px 6px 20px;
+    padding: 5px 5px 5px 0;
+    border-radius: 0;
+    background-color: #E69A9A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .bottom .left-side .three-lines {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container .bottom .left-side .three-lines span {
+    height: 12%;
+    margin: 3px 0px;
+    border-radius: 0 20px 20px 0;
+    background-color: #6B1738;
+}
+.container .bottom .left-side .circle {
+    width: 25px;
+    height: 25px;
+    background-color: #6B1738;
+    position: relative;
+}
+.container .bottom .left-side .circle::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #6B1738;
+    background-color: #01D2BF;
+    position: absolute;
+    right: 25%;
+}
+.container .bottom .medium .left-side > div:last-of-type {
+    width: 30%;
+    height: 50%;
+    background-color: #6B1738;
+    border-radius: 5px;
+}
+.container .bottom .medium .right-side {
+    width: 23%;
+    height: 100%;
+    background-color: #FF5E5C;
+    border-top: 15px solid #FFD8D8;
+    border-bottom: 30px solid #E93751;
+    border-radius: 0 15px 0 0;
+}
+/* End medium */
+/* End Bottom */
